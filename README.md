@@ -185,139 +185,84 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ## Notes:
 ➠ Throughout Week 2, I gained hands-on experience with Amazon S3, KMS, and CloudTrail. These skills are critical for managing and securing data storage solutions on AWS.
 
-## 3️⃣ week 3
+## 3️⃣ Week 3
+### 12th June 2024: Online Session: Introduction to AWS DynamoDB, API Gateway, and Lambda Functions
 
-### *11th June 2024*
-- *Online Session*: Introduction to DynamoDB and its functionalities.
-- Discussed advanced topics related to AWS services, focusing on DynamoDB, a NoSQL database service.
+This week focused on building a serverless backend using AWS services like DynamoDB, API Gateway, and Lambda Functions. We worked on a project to create CRUD APIs for managing items in a DynamoDB table.
 
+### Outline of Week 3
+- **Create a table in DynamoDB**
+- **Write a Lambda Function as a Backend**
+- **Configure API Endpoints on API Gateway**
+  - GET /items
+  - PUT /items
+  - GET /items/{id}
+  - DELETE /items/{id}
+- **Configure API Endpoints with Lambda Code**
+- **Test Out APIs through Curl and Browser**
 
+### 📝 Day-by-Day Progress
 
-### *Here is the Outline of Week-3:*
-1. Create a DynamoDB table
-2. Insert Items into the table
-3. Query the table
-4. Perform a scan operation
-5. Create an index
-6. Query the index
-7. Enable DynamoDB Streams
-8. Process stream records using AWS Lambda
-9. Create a backup of the table
-10. Restore the table from the backup
+**Day 1: Creating a Table in DynamoDB**
+- Created a new table in Amazon DynamoDB, a fast and flexible NoSQL database service designed for applications requiring consistent, single-digit millisecond latency at any scale. Configured the table with a primary key and other necessary attributes to store item data efficiently.
 
-## 📝 Day-by-Day Progress
+**Day 2: Writing Lambda Functions**
+- Developed a Lambda function to serve as the backend logic for our CRUD operations. AWS Lambda allows you to run code without provisioning or managing servers. The function, written in Python, included logic to interact with DynamoDB for various operations like retrieving, inserting, updating, and deleting items.
 
-### Day 1: Creating and Managing DynamoDB Table
-➠ *Created a DynamoDB table*:
-  - Created a new DynamoDB table to store structured data. Configured the table's primary key and specified attributes.
+**Day 3: Configuring API Endpoints**
+- Set up API Gateway to expose our Lambda functions as RESTful API endpoints. Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. Configured the endpoints for the various CRUD operations.
 
-➠ *Inserted items into the table*:
-  - Added items to the DynamoDB table using the AWS Management Console. This involved specifying values for the primary key and other attributes.
+**Day 4: Implementing CRUD Operations**
+- **GET /items**: Configured the GET /items endpoint to retrieve all items from the DynamoDB table. This endpoint interacts with the Lambda function to fetch and return the list of items.
+- **PUT /items**: Set up the PUT /items endpoint to add new items to the DynamoDB table. The Lambda function processes the incoming request and inserts the new item into the table.
+- **GET /items/{id}**: Implemented the GET /items/{id} endpoint to retrieve a specific item by its ID. The Lambda function uses the ID parameter to query DynamoDB and return the requested item.
+- **DELETE /items/{id}**: Configured the DELETE /items/{id} endpoint to remove an item from the DynamoDB table based on its ID. The Lambda function handles the deletion process and ensures the item is removed.
+- **Configure API Endpoints with Lambda Code**: Linked the API Gateway endpoints with the corresponding Lambda functions. This integration allows API Gateway to invoke the correct Lambda function for each API request, ensuring the backend logic is executed properly.
 
+**Day 5: Testing APIs**
+- Tested the configured APIs using curl commands and a web browser to ensure they work as expected. Verified that the CRUD operations (Create, Read, Update, Delete) perform correctly and that the APIs return the appropriate responses for different scenarios.
 
+## 4️⃣ Week 4
+### 21st June 2024: Online Session: Introduction to AWS Bedrock, S3, and Knowledge Base Integration
 
-### Day 2: Querying and Scanning DynamoDB
-➠ *Performed query operations*:
-  - Used DynamoDB's query functionality to retrieve items based on specific criteria. Queries are efficient when searching by primary key or secondary index.
+This week focused on building a knowledge base using AWS Bedrock, creating a vector store for efficient data retrieval, and interacting with the knowledge base using an agent.
 
-➠ *Performed scan operations*:
-  - Conducted scan operations to retrieve all items from the DynamoDB table. Scans are useful for analyzing data but can be less efficient for large datasets.
+### Outline of Week 4
+- **Create a Bucket**
+- **Upload my Resume**
+- **Create Knowledge Base in Bedrock**
+- **Link S3 Bucket Object (Resume) with this Knowledge Base**
+- **Create Vector Store using Embeddings and Data Source**
+- **Test Knowledge Base using Generate Responses**
+- **Test Knowledge Base without using Generate Responses**
+- **Create an Agent**
+- **Connect it with Knowledge Base**
+- **Interact with your Resume**
 
+### 📝 Day-by-Day Progress
 
+**Day 1: Setting Up the S3 Bucket and Uploading Resume**
+- **Create a Bucket**: Created a new S3 bucket for storing objects. Amazon S3 is a scalable object storage service that allows for the storage and retrieval of any amount of data at any time.
+- **Upload my Resume**: Uploaded my resume to the S3 bucket. This step is crucial for linking the resume to the knowledge base in Bedrock.
 
-### Day 3: Indexing and Streams
-➠ *Created a secondary index*:
-  - Created a secondary index on the DynamoDB table to enable querying on non-primary key attributes. This enhances query flexibility.
+**Day 2: Creating and Linking Knowledge Base in Bedrock**
+- **Create Knowledge Base in Bedrock**: Created a knowledge base in AWS Bedrock, used for building intelligent applications with comprehensive knowledge management and natural language understanding capabilities.
+- **Link S3 Bucket Object (Resume) with this Knowledge Base**: Linked the uploaded resume from the S3 bucket to the knowledge base, allowing Bedrock to use the resume as a data source for generating responses.
 
-➠ *Queried the secondary index*:
-  - Used the secondary index to perform queries on attributes other than the primary key. This demonstrated the power of indexing in DynamoDB.
+**Day 3: Building and Testing the Vector Store**
+- **Create Vector Store using Embeddings and Data Source**: Created a vector store using embeddings to enable efficient data retrieval. This involved transforming the resume data into vector embeddings that Bedrock can use for quick search and retrieval.
+- **Test Knowledge Base using Generate Responses**: Tested the knowledge base by generating responses from the linked resume data. This helped verify that the knowledge base correctly understands and retrieves information from the resume.
+- **Test Knowledge Base without using Generate Responses**: Conducted tests on the knowledge base without using the generate response feature to ensure it can handle direct queries and return accurate information.
 
-➠ *Enabled DynamoDB Streams*:
-  - Enabled DynamoDB Streams to capture data modification events in the table. Streams provide real-time change data capture capabilities.
+**Day 4: Creating and Connecting an Agent**
+- **Create an Agent**: Created an agent in AWS Bedrock. Agents in Bedrock are responsible for interacting with users and providing responses based on the knowledge base.
+- **Connect it with Knowledge Base**: Linked the created agent with the knowledge base to enable it to access and retrieve information from the resume stored in S3.
 
+**Day 5: Interacting with the Resume**
+- **Interact with your Resume**: Interacted with the resume through the agent, querying the agent to retrieve specific information from the resume, ensuring the setup was functional and effective.
 
-
-### Day 4: Lambda Integration and Backup
-➠ *Processed stream records with AWS Lambda*:
-  - Created an AWS Lambda function to process DynamoDB stream records. This function reacts to data changes in the DynamoDB table and performs specific actions based on the changes.
-
-➠ *Created a backup of the DynamoDB table*:
-  - Created an on-demand backup of the DynamoDB table to ensure data durability and disaster recovery capabilities.
-
-➠ *Restored the table from the backup*:
-  - Restored the DynamoDB table from the backup to verify the backup and restore functionality. This ensures that data can be recovered in case of any loss or corruption.
-
-
-
-## Notes:
-➠ Week 3 provided a deep dive into DynamoDB, highlighting its scalability and flexibility for handling NoSQL data. The integration with AWS Lambda for stream processing showcased the power of event-driven architecture.
-
-## 4️⃣ week 4
-
-### *18th June 2024*
-- *Online Session*: Exploring API Gateway and AWS Lambda functions
-- Focused on building serverless applications using API Gateway and Lambda. Discussed how these services integrate to create scalable and cost-effective applications.
-
-
-
-### *Here is the Outline of Week-4:*
-1. Create an API using API Gateway
-2. Create a Lambda function
-3. Integrate the API with the Lambda function
-4. Deploy the API
-5. Test the API
-6. Enable logging and monitoring
-7. Secure the API with API keys
-8. Enable CORS for the API
-9. Create a custom domain for the API
-10. Monitor the API using CloudWatch
-
-## 📝 Day-by-Day Progress
-
-### Day 1: Setting Up API Gateway and Lambda
-➠ *Created an API using API Gateway*:
-  - Created a new REST API using Amazon API Gateway. Defined the resources and methods for the API.
-
-➠ *Created a Lambda function*:
-  - Developed a Lambda function to handle requests from the API. Lambda allows running code without provisioning or managing servers.
-
-
-
-### Day 2: Integration and Deployment
-➠ *Integrated API Gateway with the Lambda function*:
-  - Linked the API Gateway methods to the Lambda function, enabling the API to trigger the Lambda function upon receiving requests.
-
-➠ *Deployed the API*:
-  - Deployed the API to a stage, making it accessible via a public endpoint. API Gateway handles the deployment process, ensuring the API is ready for use.
-
-
-
-### Day 3: Testing and Securing the API
-➠ *Tested the API*:
-  - Performed various tests to ensure the API was functioning correctly. This involved sending requests and verifying the responses from the Lambda function.
-
-➠ *Enabled logging and monitoring*:
-  - Enabled detailed logging and monitoring for the API using AWS CloudWatch. This helps in tracking API usage and identifying potential issues.
-
-➠ *Secured the API with API keys*:
-  - Implemented API keys to restrict access to the API. This ensures that only authorized users can make requests to the API.
-
-
-
-### Day 4: Enhancements and Monitoring
-➠ *Enabled CORS for the API*:
-  - Configured Cross-Origin Resource Sharing (CORS) to allow the API to be accessed from different domains. This is crucial for enabling web applications to interact with the API.
-
-➠ *Created a custom domain for the API*:
-  - Set up a custom domain for the API, making it easier to access and more professional-looking. This involved configuring DNS settings and linking the domain to the API Gateway.
-
-➠ *Monitored the API using CloudWatch*:
-  - Used Amazon CloudWatch to monitor the API's performance and usage metrics. This helps in identifying trends and potential issues in real-time.
-
-
-
-## Notes:
-➠ Week 4 focused on building and deploying serverless applications using API Gateway and Lambda. The hands-on experience with these services demonstrated the benefits of serverless architecture, such as scalability, cost-efficiency, and ease of management.
+### Problems Faced After Completion of Internship
+After completing the internship on 30th June, I noticed that my billing charges were higher than expected. I contacted Amit Aurora sir, and we discovered that my Bedrock, KMS, and Agent Services were still active. We reached out to AWS support, explaining that we were students exploring the services and unintentionally went beyond our usage limits. Over several days, AWS support guided me to terminate the services, and by 15th July, the billing issue was resolved. Special thanks to AWS and Amit sir for their guidance.
 
 ## 🌟 Conclusion
 This internship has provided valuable hands-on experience with various AWS services, enhancing my skills in cloud computing and serverless architecture. The project tasks helped me understand the practical applications of AWS and
