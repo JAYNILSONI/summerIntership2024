@@ -11,7 +11,7 @@ Welcome to my GitHub repository for the AWS Summer Internship 2024! This project
 - *AWS Bootcamp Live Session*: Basics of Amazon Web Services
 - On 25th May, there was a live bootcamp led by Amit Arora (Security Architect at AWS) for an AWS Club where entry-level engineers could participate and build their AWS skills from the ground up. Although it wasn't the start of the internship, we learned the basics of Amazon Web Services and how it provides various functionalities to developers. The internship period is 4 weeks long, focusing on labs and practical insights to become familiar with AWS.
 
-![AWS Bootcamp](https://media.giphy.com/media/3o7aD4O9je3X2Ed3du/giphy.gif)
+
 
 # Start of Internship
 
@@ -20,7 +20,7 @@ Welcome to my GitHub repository for the AWS Summer Internship 2024! This project
 - *Orientation Meeting*: Introduction to AWS and overview of the internship tasks
 - During the start of the meeting, I tackled questions about AWS to understand its basics. The agenda for the first week regarding the tasks to be done was discussed. The tasks included everything from creating an account to generating a portfolio hosted on an AWS instance.
 
-![Orientation Meeting](https://media.giphy.com/media/l0HlO8hG8tUfp7bSw/giphy.gif)
+
 
 ### *Here is the Outline of Week-1:*
 
@@ -44,7 +44,7 @@ Welcome to my GitHub repository for the AWS Summer Internship 2024! This project
 - Set up a zero-dollar limit budget (Task 4).
 - Launched an EC2 instance from the free tier options (Task 5).
 
-![AWS Free Tier](https://media.giphy.com/media/3o7aCTPPm4OHfRLSHq/giphy.gif)
+
 
 ### Day 2: Creating Instance with Apache Server to Deploy Web Page
 ➠ Connected to the EC2 Instance (Task 6):
@@ -56,7 +56,7 @@ Welcome to my GitHub repository for the AWS Summer Internship 2024! This project
 ➠ Deployed a Personal page.html on Apache (Task 8):
 - With Apache running, I deployed a simple HTML page (Personalpage.html). This involved placing the HTML file in Apache’s root directory and configuring the server to serve this page. Deploying the HTML page allowed me to create a personal webpage accessible over the internet via the EC2 instance's public IP address.
 
-![Deploying Apache](https://media.giphy.com/media/3ohs7YG7LIWcPRxHmo/giphy.gif)
+
 
 ### Day 3: Building the Portfolio
 
@@ -72,7 +72,7 @@ Welcome to my GitHub repository for the AWS Summer Internship 2024! This project
 - Incorporated Bootstrap, a popular CSS framework, to make the portfolio responsive and visually appealing.
 Used Bootstrap components like navigation bars, cards, and buttons to enhance the design and functionality of the website.
 
-![Building Portfolio](https://media.giphy.com/media/3oEjHWtQ9p1VL5HbC4/giphy.gif)
+
 
 ### Day 4: Enhancing with JavaScript, SASS, and CSS
 
@@ -95,16 +95,16 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 - SASS: Enhanced the CSS with advanced features for better maintainability and efficiency.
 - CSS: Styled the website to improve visual appeal and user experience.
 
-![Enhancing Portfolio](https://media.giphy.com/media/l1J9s4A9wr6NTrFfy/giphy.gif)
+
 
 ### Day 5: Configuration and Final Touchup
 - Configured the Security Group for the Apache server on the EC2 instance to accept incoming connections on port 80. This involved adding an inbound rule in the Security Group settings to allow HTTP traffic, ensuring that the web server is accessible from the internet. (Task 9)
 
 - Verified the configuration by accessing the personal webpage hosted on the EC2 instance. Used the public IP address of the instance in a web browser to confirm that the Apache server is serving the webpage correctly. This demonstrated successful setup and configuration of the web server. (Task 10)
 
-- Here is the finalised link: http://52.63.0.141/personalpage.html
 
-![Final Touchup](https://media.giphy.com/media/3o7aD4o9je3X2Ed3du/giphy.gif)
+
+
 
 ## Notes:
 ➠ We were given this repo which contains basic documentation of AWS services which can be helpful to everybody: [AWS Cheat Sheet](https://github.com/hamidgholami/accp-cheatsheet)
@@ -115,7 +115,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 - *Online Session*: Learning about storage and S3 with its related services, also switching from EC2 to S3
 - At the start of the meeting, we were asked rapid questions regarding week 1 tasks.
 
-![AWS S3](https://media.giphy.com/media/3o7aCTPPm4OHfRLSHq/giphy.gif)
+
 
 ### *Here is the Outline of Week-2:*
 1. Create a Bucket
@@ -141,7 +141,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ Uploaded files to the bucket:
 - Uploaded various files to the S3 bucket to test storage and retrieval capabilities. This provided hands-on experience with S3's upload functionalities and permissions settings.
 
-![S3 Bucket](https://media.giphy.com/media/3o7aD2U4piIMlLyHc0/giphy.gif)
+
 
 ### Day 2: Securing and Distributing Content
 ➠ *Enabled encryption for the uploaded files*:
@@ -160,7 +160,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Changed the default key for the S3 bucket to the new KMS key*:
   - Configured the S3 bucket to use the newly created KMS key as the default key for encrypting objects. This ensures that all new files uploaded to the bucket are encrypted with the KMS key, enhancing the security of stored data.
 
-![Securing and Distributing Content](https://media.giphy.com/media/3o6ZtbkiP9lFUubZAA/giphy.gif)
+
 
 ### Day 3: Monitoring and Logging
 
@@ -170,7 +170,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Configured CloudTrail to track bucket events*:
   - Configured CloudTrail to specifically track events related to the S3 bucket, such as file uploads, downloads, and permission changes. This helps in keeping an eye on activities and identifying any unauthorized access attempts.
 
-![Monitoring and Logging](https://media.giphy.com/media/l1J9CbbZfq9g9sR5K/giphy.gif)
+
 
 ### Day 4: Shutting Down EC2 Instance
 
@@ -180,7 +180,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Cleaned up associated resources*:
   - Cleaned up associated resources, such as security groups and key pairs, to ensure no leftover configurations were taking up resources or creating potential security risks.
 
-![Shutting Down EC2](https://media.giphy.com/media/3o7aD4bVIk4r4rRriA/giphy.gif)
+
 
 ## Notes:
 ➠ Throughout Week 2, I gained hands-on experience with Amazon S3, KMS, and CloudTrail. These skills are critical for managing and securing data storage solutions on AWS.
@@ -191,7 +191,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 - *Online Session*: Introduction to DynamoDB and its functionalities.
 - Discussed advanced topics related to AWS services, focusing on DynamoDB, a NoSQL database service.
 
-![DynamoDB](https://media.giphy.com/media/3o7aD8MNYL8qFZY0Lu/giphy.gif)
+
 
 ### *Here is the Outline of Week-3:*
 1. Create a DynamoDB table
@@ -214,7 +214,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Inserted items into the table*:
   - Added items to the DynamoDB table using the AWS Management Console. This involved specifying values for the primary key and other attributes.
 
-![Creating DynamoDB Table](https://media.giphy.com/media/3o7aD2bA1AcvXbgHZq/giphy.gif)
+
 
 ### Day 2: Querying and Scanning DynamoDB
 ➠ *Performed query operations*:
@@ -223,7 +223,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Performed scan operations*:
   - Conducted scan operations to retrieve all items from the DynamoDB table. Scans are useful for analyzing data but can be less efficient for large datasets.
 
-![Querying and Scanning](https://media.giphy.com/media/3o6Zt9bt19ikCFQmFO/giphy.gif)
+
 
 ### Day 3: Indexing and Streams
 ➠ *Created a secondary index*:
@@ -235,7 +235,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Enabled DynamoDB Streams*:
   - Enabled DynamoDB Streams to capture data modification events in the table. Streams provide real-time change data capture capabilities.
 
-![Indexing and Streams](https://media.giphy.com/media/3o7aD4XKn4VfGUQ3AA/giphy.gif)
+
 
 ### Day 4: Lambda Integration and Backup
 ➠ *Processed stream records with AWS Lambda*:
@@ -247,7 +247,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Restored the table from the backup*:
   - Restored the DynamoDB table from the backup to verify the backup and restore functionality. This ensures that data can be recovered in case of any loss or corruption.
 
-![Lambda Integration and Backup](https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKk/giphy.gif)
+
 
 ## Notes:
 ➠ Week 3 provided a deep dive into DynamoDB, highlighting its scalability and flexibility for handling NoSQL data. The integration with AWS Lambda for stream processing showcased the power of event-driven architecture.
@@ -258,7 +258,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 - *Online Session*: Exploring API Gateway and AWS Lambda functions
 - Focused on building serverless applications using API Gateway and Lambda. Discussed how these services integrate to create scalable and cost-effective applications.
 
-![API Gateway and Lambda](https://media.giphy.com/media/3o7aD3EYyvbUB1y2iY/giphy.gif)
+
 
 ### *Here is the Outline of Week-4:*
 1. Create an API using API Gateway
@@ -281,7 +281,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Created a Lambda function*:
   - Developed a Lambda function to handle requests from the API. Lambda allows running code without provisioning or managing servers.
 
-![Setting Up API](https://media.giphy.com/media/3o6ZtkMVRaKnDjvQ1S/giphy.gif)
+
 
 ### Day 2: Integration and Deployment
 ➠ *Integrated API Gateway with the Lambda function*:
@@ -290,7 +290,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Deployed the API*:
   - Deployed the API to a stage, making it accessible via a public endpoint. API Gateway handles the deployment process, ensuring the API is ready for use.
 
-![Integration and Deployment](https://media.giphy.com/media/3o7aD5X9yD8tK0QG76/giphy.gif)
+
 
 ### Day 3: Testing and Securing the API
 ➠ *Tested the API*:
@@ -302,7 +302,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Secured the API with API keys*:
   - Implemented API keys to restrict access to the API. This ensures that only authorized users can make requests to the API.
 
-![Testing and Securing](https://media.giphy.com/media/3o7aD2hU5PptQyyJwM/giphy.gif)
+
 
 ### Day 4: Enhancements and Monitoring
 ➠ *Enabled CORS for the API*:
@@ -314,7 +314,7 @@ Utilized event listeners and DOM manipulation to create a more engaging user exp
 ➠ *Monitored the API using CloudWatch*:
   - Used Amazon CloudWatch to monitor the API's performance and usage metrics. This helps in identifying trends and potential issues in real-time.
 
-![Enhancements and Monitoring](https://media.giphy.com/media/3o7aD9bM4FrAWnY1AY/giphy.gif)
+
 
 ## Notes:
 ➠ Week 4 focused on building and deploying serverless applications using API Gateway and Lambda. The hands-on experience with these services demonstrated the benefits of serverless architecture, such as scalability, cost-efficiency, and ease of management.
